@@ -1,9 +1,16 @@
-<div class="container">
-    <app-navi></app-navi>
+<app-navi></app-navi>
+<div class="container-fluid">
     <div class="row">
-      <div class="col-md-12">
-        <app-car></app-car>
-      </div>
-       </div>
-    <router-outlet></router-outlet>
-  </div>
+            <div style="height:600px;overflow:auto; background-color: rgb(178, 206, 169,0.3);" class="col-md-2 ">
+                <app-brand></app-brand>
+                <br>
+                <app-color></app-color>
+            </div>
+        <div class="col-md-10">
+          <app-car></app-car>
+            <router-outlet></router-outlet>
+        </div>
+       
+    </div>
+
+</div>
