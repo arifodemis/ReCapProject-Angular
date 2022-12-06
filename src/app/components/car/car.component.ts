@@ -10,7 +10,7 @@ import { CarService } from 'src/app/services/car.service';
 })
 export class CarComponent implements OnInit {
 
-  currentCar:CarDetailDto;
+  currentCar: CarDetailDto;
   cars: CarDetailDto[] = [];
   dataLoaded = false;
   constructor(private carService: CarService, private activatedRoute: ActivatedRoute) { }
@@ -54,6 +54,3 @@ export class CarComponent implements OnInit {
     this.currentCar = car;
   }
 }
-
-  
-

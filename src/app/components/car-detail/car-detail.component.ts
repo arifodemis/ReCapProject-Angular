@@ -19,8 +19,8 @@ export class CarDetailComponent implements OnInit {
     private activatedRoute: ActivatedRoute) { }
 
   dataLoaded = false;
- carDetail:CarDetailDto;
- carImages:CarImage[];
+  carDetail: CarDetailDto;
+  carImages: CarImage[];
 
   ngOnInit(): void {
     this.activatedRoute.params.subscribe(params => {
