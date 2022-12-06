@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+<<<<<<< HEAD
 import { CarComponent } from './components/car/car.component';
 import { BrandComponent } from './components/brand/brand.component';
 import { ColorComponent } from './components/color/color.component';
@@ -24,11 +24,16 @@ import { CarDetailComponent } from './components/car-detail/car-detail.component
     CustomerComponent,
     CarDetailComponent,
  
+=======
+
+@NgModule({
+  declarations: [
+    AppComponent
+>>>>>>> parent of 0f63ae6 (first commit)
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    HttpClientModule
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
