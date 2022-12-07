@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { map } from 'rxjs';
 import { CarDetailDto } from 'src/app/models/carDetailDto';
 import { CarImage } from 'src/app/models/carImage';
 import { CarImageService } from 'src/app/services/car-image.service';
@@ -44,7 +43,7 @@ export class CarDetailComponent implements OnInit {
   }
 
   getImagePath(carImage: CarImage): string {
-    let url: string = "https://localhost:44322" + carImage.imagePath
-    return url
+    let url: string = "https://localhost:44322/" + carImage.imagePath;
+    return url;
   }
 }
