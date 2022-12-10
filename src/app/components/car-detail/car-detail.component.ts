@@ -42,8 +42,14 @@ export class CarDetailComponent implements OnInit {
     })
   }
 
+
   getImagePath(carImage: CarImage): string {
-    let url: string = "https://localhost:44322/" + carImage.imagePath;
+
+   
+    let newPath = carImage.imagePath.replace("C:\\Users\\arifo\\source\\repos\\ReCapProject\\WebAPI\\Images\\", "W3Schools")
+    console.log("", newPath)
+    
+      let url: string = "https://localhost:44322/images/" + newPath;
     return url;
   }
 }

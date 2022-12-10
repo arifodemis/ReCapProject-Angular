@@ -18,7 +18,6 @@ import { CarFilterPipePipe } from './pipes/car-filter-pipe.pipe';
 import { ColorFilterPipePipe } from './pipes/color-filter-pipe.pipe';
 import {ToastrModule} from "ngx-toastr";
 
-
 @NgModule({
   declarations: [
     AppComponent,
